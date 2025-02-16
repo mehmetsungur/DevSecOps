@@ -1,4 +1,4 @@
-<h1>DevSecOps for Cloud - README</h1>
+<h1>DevSecOps for Cloud</h1>
 
 <h2>📌 Giriş</h2>
 <p>Bu <strong>DevSecOps for Cloud</strong> eğitiminde, güvenli yazılım geliştirme süreçlerini bulut ortamlarında nasıl entegre edebileceğinizi öğreneceksiniz. <strong>DevSecOps yaşam döngüsünü</strong> anlayarak uygulamalarınızı güvenli hale getirebileceksiniz.</p>
