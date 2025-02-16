@@ -1,85 +1,71 @@
-DevSecOps for Cloud - README
+<h1>DevSecOps for Cloud - README</h1>
 
-📌 Giriş
+<h2>📌 Giriş</h2>
+<p>Bu <strong>DevSecOps for Cloud</strong> eğitiminde, güvenli yazılım geliştirme süreçlerini bulut ortamlarında nasıl entegre edebileceğinizi öğreneceksiniz. <strong>DevSecOps yaşam döngüsünü</strong> anlayarak uygulamalarınızı güvenli hale getirebileceksiniz.</p>
 
-Bu DevSecOps for Cloud eğitiminde, güvenli yazılım geliştirme süreçlerini bulut ortamlarında nasıl entegre edebileceğinizi öğreneceksiniz. DevSecOps yaşam döngüsünü anlayarak uygulamalarınızı güvenli hale getirebileceksiniz.
+<h2>🛠 Gereksinimler</h2>
+<p>Bu projeyi anlamak için aşağıdaki konular hakkında temel bilgiye sahip olmanız önerilir:</p>
+<ul>
+    <li>☁️ <strong>Bulut Bilişim Temelleri</strong></li>
+    <li>🔒 <strong>Siber Güvenlik Temelleri</strong></li>
+    <li>💻 <strong>Yazılım Geliştirme Süreçleri</strong></li>
+</ul>
 
-🛠 Gereksinimler
+<h2>🔍 DevSecOps Temelleri</h2>
+<p><strong>DevSecOps</strong>, <strong>Güvenlik (Security)</strong>, <strong>Geliştirme (Development)</strong> ve <strong>Operasyonları (Operations)</strong> birleştiren bir yaklaşımdır. Güvenliği yazılım geliştirme sürecinin her aşamasına entegre eder.</p>
 
-Bu projeyi anlamak için aşağıdaki konular hakkında temel bilgiye sahip olmanız önerilir:
+<h3>DevSecOps Yaşam Döngüsü:</h3>
+<ol>
+    <li><strong>Planlama</strong> - Risk analizi, tehdit modelleme</li>
+    <li><strong>Kodlama</strong> - Güvenli kod geliştirme, statik kod analizi</li>
+    <li><strong>Derleme ve Test</strong> - SAST, DAST, SCA</li>
+    <li><strong>Dağıtım ve İzleme</strong> - SIEM entegrasyonu, olay yönetimi</li>
+    <li><strong>Yanıt Verme</strong> - Olay müdahale ve güvenlik açıklarını kapatma</li>
+</ol>
 
-☁️ Bulut Bilişim Temelleri
+<h2>🏗 Güvenli Yazılım Geliştirme</h2>
+<h3>📌 Planlama Aşaması</h3>
+<ul>
+    <li><strong>Tehdit Modelleme (Threat Modeling)</strong></li>
+    <li><strong>Veri Akışı Diyagramları ve Risk Analizi</strong></li>
+    <li><strong>Güvenlik Açıklarını Tespit Etme</strong></li>
+</ul>
 
-🔒 Siber Güvenlik Temelleri
+<h3>🛡️ Güvenli Kod Geliştirme</h3>
+<ul>
+    <li><strong>Statik Kod Analizi (SAST)</strong> 🏗 SonarQube, Checkmarx</li>
+    <li><strong>Secrets Management</strong> 🔑 AWS Secrets Manager, HashiCorp Vault</li>
+</ul>
 
-💻 Yazılım Geliştirme Süreçleri
+<h3>🛠 Derleme ve Test Aşaması</h3>
+<ul>
+    <li><strong>Statik Uygulama Güvenlik Testi (SAST)</strong></li>
+    <li><strong>Dinamik Uygulama Güvenlik Testi (DAST)</strong></li>
+    <li><strong>Bağımlılık Analizi (SCA)</strong></li>
+</ul>
 
-🔍 DevSecOps Temelleri
+<h2>🚀 CI/CD Süreçlerinde Güvenlik</h2>
+<ul>
+    <li><strong>Kod Push Edildiğinde Otomatik Güvenlik Taraması</strong></li>
+    <li><strong>Güvenli Bağımlılık Yönetimi (SCA)</strong></li>
+    <li><strong>Şifreleri Düz Metin Olarak Kullanmayın!</strong></li>
+</ul>
 
-DevSecOps, Güvenlik (Security), Geliştirme (Development) ve Operasyonları (Operations) birleştiren bir yaklaşımdır. Güvenliği yazılım geliştirme sürecinin her aşamasına entegre eder.
+<h2>📊 İzleme ve Yanıt Verme</h2>
+<ul>
+    <li><strong>SIEM Çözümleri:</strong> Elastic Security, Splunk, Wazuh</li>
+    <li><strong>Kubernetes Security:</strong> Falco, Sysdig Secure, Aqua Security</li>
+    <li><strong>DDoS Koruma:</strong> Cloud API security, Rate Limiting, Load Balancing</li>
+</ul>
 
-DevSecOps Yaşam Döngüsü:
+<h2>🔚 Sonuç</h2>
+<p>Bu rehberde <strong>DevSecOps metodolojisini</strong> inceledik ve <strong>güvenli yazılım geliştirme</strong> süreçlerini nasıl uygulayacağınızı öğrendik.</p>
 
-Planlama - Risk analizi, tehdit modelleme
+<h3>💡 İleri Düzey Konular:</h3>
+<ul>
+    <li><strong>Cloud Native Security</strong> (AWS, GCP, Azure güvenlik çözümleri)</li>
+    <li><strong>Red Team ve Blue Team testleri</strong></li>
+    <li><strong>Zero Trust Security (Sıfır Güven Mimari)</strong></li>
+</ul>
 
-Kodlama - Güvenli kod geliştirme, statik kod analizi
-
-Derleme ve Test - SAST, DAST, SCA
-
-Dağıtım ve İzleme - SIEM entegrasyonu, olay yönetimi
-
-Yanıt Verme - Olay müdahale ve güvenlik açıklarını kapatma
-
-🏗 Güvenli Yazılım Geliştirme
-
-📌 Planlama Aşaması
-
-Tehdit Modelleme (Threat Modeling)
-
-Veri Akışı Diyagramları ve Risk Analizi
-
-Güvenlik Açıklarını Tespit Etme
-
-🛡️ Güvenli Kod Geliştirme
-
-Statik Kod Analizi (SAST) 🏗 SonarQube, Checkmarx
-
-Secrets Management 🔑 AWS Secrets Manager, HashiCorp Vault
-
-🛠 Derleme ve Test Aşaması
-
-Statik Uygulama Güvenlik Testi (SAST)
-
-Dinamik Uygulama Güvenlik Testi (DAST)
-
-Bağımlılık Analizi (SCA)
-
-🚀 CI/CD Süreçlerinde Güvenlik
-
-Kod Push Edildiğinde Otomatik Güvenlik Taraması
-
-Güvenli Bağımlılık Yönetimi (SCA)
-
-Şifreleri Düz Metin Olarak Kullanmayın!
-
-📊 İzleme ve Yanıt Verme
-
-SIEM Çözümleri: Elastic Security, Splunk, Wazuh
-
-Kubernetes Security: Falco, Sysdig Secure, Aqua Security
-
-DDoS Koruma: Cloud API security, Rate Limiting, Load Balancing
-
-🔚 Sonuç
-
-Bu rehberde DevSecOps metodolojisini inceledik ve güvenli yazılım geliştirme süreçlerini nasıl uygulayacağınızı öğrendik.
-
-💡 İleri Düzey Konular:
-
-Cloud Native Security (AWS, GCP, Azure güvenlik çözümleri)
-
-Red Team ve Blue Team testleri
-
-Zero Trust Security (Sıfır Güven Mimari)
-
-🎉 Tebrikler! Projelerinizde DevSecOps sürecini uygulayarak güvenli yazılım geliştirme yolculuğunuza devam edebilirsiniz!
+<p>🎉 <strong>Tebrikler! Projelerinizde DevSecOps sürecini uygulayarak güvenli yazılım geliştirme yolculuğunuza devam edebilirsiniz!</strong></p>
