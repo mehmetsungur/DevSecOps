@@ -1,0 +1,74 @@
+Welcome to the section summary
+for Building and Testing Secure Software.
+In this summary,
+we'll be going over the lessons
+Building Secure Software and Testing Secure Software.
+In our lesson Building Secure Software,
+we discussed the building stage
+as well as the different types of security testing
+and analysis tools that we could use
+on our software application builds.
+We took a look at static application security testing
+and how it's a white-box approach
+to automated code analysis.
+This means that this particular type of testing
+has access to the software application source code.
+We discussed software composition analysis,
+which scans open-source software
+and third-party dependencies
+for security vulnerabilities.
+We also touched on
+the Common Vulnerabilities and Exposures program
+and how CVE numbers uniquely identify
+security vulnerabilities.
+This ensures that cybersecurity professionals
+are on the same page when discussing
+a particular vulnerability.
+At the end of this lesson,
+we took a look at GCP Security Insights.
+Not only does this GCP feature
+scan container builds for security vulnerabilities,
+it also identifies those vulnerabilities
+by CVE number, gives them a CVSS rating,
+which can range from low all the way to critical,
+and provides a supply chain level
+for software artifacts rating
+based on the software supply chain's security
+and maturity level.
+In our lesson Testing Secure Software,
+we talked about the testing stage,
+and in this stage, it's important to perform
+dynamic application security testing.
+We also took a look at
+testing various parts of our software application
+using unit testing
+and analyzing how our web application behaves
+by inputting random or intelligently crafted data
+using fuzz testing.
+Dynamic Application Security Testing, or DAST for short,
+is a black-box security testing approach
+that doesn't require access to the application source code
+and is performed while the application is actively running.
+In the later half of this lesson,
+we discovered OWASP, which is an organization
+dedicated to web application security
+that also publishes the OWASP Top 10 list
+of the most notorious web application security risks.
+This organization also maintains a project
+known as the Zed Attack Proxy,
+which is a open-source DAST tool.
+We discussed how ZAP offers a number of options,
+such as marketplace extensions
+and the ability to craft HTTP requests.
+Last, we took a look at the GCP Web Security Scanner,
+which is a cloud native web app DAST tool.
+Not only does the Web Security Scanner
+identify security vulnerabilities,
+like those listed on the OWASP Top 10,
+but it also provides remediation steps
+for many of the vulnerabilities that it discovers.
+Congratulations on making it to the end of this section.
+Stay tuned as we continue to learn more
+about the DevSecOps lifecycle
+and helping our security ninjas
+apply the DevSecOps methodology in the cloud.

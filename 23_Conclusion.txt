@@ -1,0 +1,13 @@
+Congratulations on reaching the end of this course,
+Introduction to DevSecOps for the Cloud.
+And if you're interested in cloud application security,
+I have a course called Hands-On Security for GCP Developers,
+that has tons of hands-on labs
+for securing your GCP environment and workloads.
+One last thing before we go.
+I wanna encourage you to engage with the community
+and leave some feedback for this course.
+Thank you for joining me on this journey
+as we learned about DevSecOps for the Cloud
+and congratulations on completing this course.
+(upbeat jingle)

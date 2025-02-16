@@ -1,0 +1,12 @@
+So let's get started with our first section,
+DevSecOps Fundamentals.
+And in this section,
+we'll start off with our first lesson on software security,
+where we'll learn about the software development lifecycle,
+as well as some basic concepts related to DevSecOps.
+In our final lesson for this section,
+we'll dive deeper into DevSecOps
+by discussing the DevSecOps lifecycle,
+as well as continuous integration and continuous deployment.
+With that said, let's jump into our first lesson,
+software security.

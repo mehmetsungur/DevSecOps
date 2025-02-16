@@ -1,0 +1,131 @@
+Welcome to the course summary
+for the course Introduction to DevSecOps for the Cloud.
+And in this course summary,
+we'll be going over the following sections,
+DevSecOps fundamentals,
+planning and coding secure software,
+building and testing secure software,
+releasing and deploying secure software,
+and finally, monitoring and responding to secure software.
+In the first section, DevSecOps fundamentals,
+we touched on the concept of application security
+or AppSec for short.
+This concept involves ways that we can apply
+security practices to the security of our application
+in order to protect our application's confidentiality,
+integrity, and availability.
+In the second lesson of this section,
+we focused on the DevSecOps lifecycle.
+This lifecycle mapped out the remainder
+of our course lessons and is centered around shifting left
+by integrating security at every stage
+of software development.
+In the section planning and coding secure software,
+we took a look at threat modeling,
+which centered around mapping and diagramming
+the application structure,
+data flows involved with the application
+in identifying areas of security vulnerabilities
+and security gaps.
+Threat modeling allows us to understand
+how our application functions
+so that we can implement security controls
+and mitigate the risk of a tax to our application.
+We also touched on code analysis,
+which involves manual review and analysis of source code
+in order to identify security vulnerabilities
+and implement coding best practices.
+In this section, building and testing secure software,
+we took an in-depth look at software composition analysis
+for scanning our third-party dependencies,
+for security vulnerabilities,
+and prevent a cascading effect of vulnerable
+third-party dependencies affecting multiple parts
+of our application everywhere they're implemented.
+We also took a look at static application security testing,
+which provides automated code review
+and analysis of our software application source code,
+while dynamic application security testing
+doesn't require access to this source code,
+and is used to identify security vulnerabilities
+in a running build of our application.
+In the section releasing and deploying secure software,
+we took a look at configuration management,
+and how it involves setting up baseline configurations,
+requiring communication and approval of all changes,
+as well as documenting configuration changes
+in case they have an undesirable effect
+and we need to roll back configurations.
+Concerning access management,
+we talked about how important it is to leverage identity
+and access management policies for the authorization
+of access to our various cloud resources.
+In this section, we also highlighted Infrastructure as Code
+and how we can leverage code to automate the creation
+of cloud infrastructure,
+provide consistency to the deployment
+of cloud infrastructure,
+and leverage secure templates
+for building out more infrastructure.
+In the latter part of this section,
+we took a look at penetration testing
+and how pen testers identify vulnerabilities
+within cloud infrastructure, computer networks,
+and web applications.
+Once those vulnerabilities have been identified,
+the pen tester actively exploits them
+and then provides a report to the organization,
+detailing the security vulnerabilities discovered,
+as well as the steps taken to exploit those vulnerabilities.
+In our final section,
+monitoring and responding to secure software,
+we discussed security information
+and event management platforms,
+and how we can leverage these platforms
+to investigate security events,
+as well as creating alerts and visual dashboards
+that report on specific security related activity.
+We also compared web application firewalls,
+which are used to filter malicious web traffic
+destined for our web application.
+While on the other hand,
+runtime application self-protection
+is an embedded security mechanism
+that monitors the application runtime and internal behavior
+in order to protect the web application
+from malicious web traffic and web app attacks.
+So a WAF provides web applications external protection,
+while RASP is more internal in nature.
+In our last lesson, we discussed incident response
+and the NIST incident response lifecycle.
+This lifecycle included preparing for security events
+by implementing security controls,
+detection and analysis of security events
+in order to determine whether that security event
+is an actual security incident.
+Then the lifecycle moves on to the containment,
+eradication, and recovery phase where organizations
+will contain a security incident,
+remove malware and threat actors from the environment,
+and return to normal operations.
+The last part of the lifecycle involves
+post-incident activities,
+such as alerting external parties that have been affected
+by the security incident, and formulating lessons learned
+in order to improve upon responding to future incidents.
+The last concept that we covered for this course
+was distributed denial-of-service attacks,
+also known as DDoS.
+These type of attacks involve attackers
+leveraging an amplification network,
+like a botnet of malware infected computers
+and then leveraging that network to perform
+a distributed attack that overwhelms web applications
+and ultimately crashes them,
+making them unavailable
+and inaccessible to the application end users.
+Well, that brings us to the end of this course summary.
+And as you can see by that photo, the dog Morty,
+sure is happy that our team of security ninjas
+have implemented DevSecOps methodologies
+for the organization's cloud-based software development.

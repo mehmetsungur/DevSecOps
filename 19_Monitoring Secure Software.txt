@@ -1,0 +1,214 @@
+Welcome to this lesson
+on monitoring secure software.
+And in this lesson, we're gonna discuss the monitoring stage
+of the DevSecOps lifecycle
+and then take a look at cloud logging services
+before moving on to security, information,
+and event management platforms.
+Finally, we'll compare web application firewalls
+to runtime application self-protection.
+So following along the DevSecOps lifecycle,
+once our software application is deployed into production,
+it's important for our security and operations teams
+to monitor the deployed application
+for suspicious and malicious activity.
+So, how do we monitor our deployed software application?
+And the answer to that is through logging.
+Logging on our cloud infrastructure, applications,
+and cloud services involves recording events.
+This includes the time of an event,
+who was involved in the event,
+actions taken in the event,
+as well as the resources involved.
+So by logging events related to our cloud environment,
+we can effectively monitor and identify malicious activity.
+So taking a look at the logging services
+available on the three major cloud service providers,
+we can see that these logging services
+enables monitoring of security events,
+like login activity, privileged actions performed,
+IAM policy changes, as well as performance metrics.
+Moving on, let's discuss
+how to take our log analysis and monitoring a step further
+using security information and event management platforms,
+or SIEM for short.
+And the main purpose of a SIEM
+is to provide centralized management of security events
+occurring in our various cloud environments
+and resources as a whole.
+And the way that SIEMs are able to do this
+is through the collection and interpretation
+of multiple and various log sources.
+So this includes our virtual private clouds,
+virtual machine instances, databases,
+and many other cloud sources.
+And by having all these log sources
+collected and interpreted by a centralized platform,
+our team of security ninjas
+are able to query all of this log information
+in order to make sense of security events.
+So instead of having to sift through logs
+and piece together the various resources
+involved with the security event,
+our team of ninjas can quickly surface information
+by leveraging SIEM queries and set alarms that alert
+when a particular series of security events occur.
+Not only that, but SIEM platforms
+also empower our team of security ninjas
+to build visual dashboards that may highlight events,
+like the number of failed logins,
+and attribute those failed logins to a visual global map
+so that we can better visualize
+where these failed login attempts
+are occurring all over the world.
+So as you can see, SIEMs are essential platforms
+used for monitoring malicious activity
+and investigating security events.
+So when it comes to Azure,
+Sentinel is Microsoft's cloud-native SIEM platform
+for monitoring security events
+and security information on Azure.
+Azure Defender, on the other hand,
+is an endpoint security suite
+that provides integration with Sentinel
+for threat intelligence, incident response,
+and providing endpoint data
+for ingestion by the Sentinel SIEM.
+On GCP, Google Cloud offers
+the cloud-native Chronicle Security Suite
+for detection, investigation,
+and response to cybersecurity events.
+This cloud-native SIEM
+also offers curated security detections
+as well as playbooks for your security operations team.
+The Security Command Center on GCP
+provides centralized security management,
+vulnerability management,
+and compliance monitoring of your GCP resources.
+Looking at the AWS GuardDuty service,
+our team of security ninjas can leverage GuardDuty
+to secure our AWS workloads,
+various AWS accounts, and AWS cloud resources
+by leveraging GuardDuty's machine learning capabilities
+and threat detection capabilities
+to analyze our AWS cloud resources for malicious activity.
+AWS Detective, on the other hand,
+can be leveraged to investigate security events
+as well as providing visualization
+of the collected security event data.
+This service is great
+for security event investigation collaboration
+amongst our security ninja team,
+and the service also integrates with GuardDuty
+to ingest security event information.
+Now, let's take a look at WAF versus RASP.
+Now, WAFs, short for web application firewall,
+are used to filter out malicious web traffic
+flowing to our web applications.
+WAFs operate at the OSI application level,
+mainly the HTTP and HTTPS protocols,
+and help protect our web applications
+against web application attacks,
+such as cross-site scripting, SQL injection,
+and others listed on the OWASP top 10 list.
+So on AWS, our security ninjas
+can leverage the AWS Web Application Firewall service,
+and on Azure, they can leverage the Azure WAF.
+Speaking of the Azure WAF,
+there is a lab associated with this section
+configuring WAF rules using Azure Web App Firewall.
+So before you dive into that lab,
+I wanted to take a moment
+to discuss the Azure Web Application Firewall
+by taking a look at the Azure WAF policies
+and do a brief configuration
+of the cross-site scripting prevention policy.
+So starting off on the Azure dashboard,
+we can navigate to the top and type in WAF
+and navigate to the Web Application Firewall policies.
+Once we reach the WAF policies page,
+I'll just go ahead and close out these popups
+and proceed to create front door WAF policy.
+On the Create a WAF Policy page,
+I'll go ahead and configure this as a global WAF
+that will leverage the front door
+Azure Content Delivery Network.
+I'll link this policy to the existing resource group
+and give this policy the name XSS for cross-site scripting.
+I'll also want to set this policy to the prevention mode
+so that it actually prevents cross-site scripting attacks.
+I'll proceed next to manage rules.
+Now, on this Managed Rules page,
+I want to disable all of the current rules that are enabled
+and only enable the cross-site scripting prevention rules.
+So I'll navigate over to Rule Id and check the box
+and then click on Disable.
+This disables all the rules.
+Next, I'll uncheck the box for Rule Id
+and then navigate to the Filter field.
+I'll go ahead and type in XSS for cross-site scripting,
+and this brings up all of the cross-site scripting rules,
+and check all of the cross-site scripting rules,
+then I'll go ahead and select Enable to enable these rules.
+As you can see, all these rules are now enabled,
+and then proceed to policy setting.
+And I'll just go ahead and add in
+no cross-site scripting allowed as the block response
+to the HTTP 403 Forbidden Error code
+that our cross-site scripting attacker will receive
+whenever they attempt to use cross-site scripting
+against our web application.
+Now, I'll just navigate to Review and Create.
+And since the policy passes validation,
+I can continue on to create the policy
+where it is ultimately deployed,
+and I get a message that the deployment was successful.
+So that was Azure WAF,
+but on GCP, Cloud Armor is the service
+that provides WAF capabilities.
+Now, when compared to RASP,
+or runtime application self-protection,
+WAFs are firewalls that are added
+to protect the traffic flowing to our web application.
+Whereas, RASP is an embedded security protection
+that protects our application at runtime and in real time.
+Now, another key feature of RASP
+is that it is application context aware,
+which means it understands
+the application's internal runtime behavior,
+data flows, and data processing
+so that it can analyze web application attacks in real time
+and respond much more quicker
+than external solutions like WAFs.
+With that said, let's wrap up this lesson.
+We took a look at the monitoring stage,
+which involves primarily monitoring suspicious
+and malicious activity.
+Next, we took a look at logging,
+which involves recording events,
+which user performed which privileged action
+from where, such as an IP address, and when.
+We talked about SIEM platforms
+and how they provide centralized management
+for security information and security events.
+Using a SIEM, our team of security ninjas can query
+and search through vast amounts of security information
+collected from various log sources.
+And we also discussed how SIEMs are great
+for surfacing security event data, such as failed logins,
+alerting on certain security events,
+and provide us the ability to build visual dashboards.
+In the last part of this lesson,
+we compared web application firewalls
+to runtime application self-protection.
+WAFs protect our web applications
+from web app attacks, like SQL injection,
+and these firewalls sit external to our web application
+and provide protection by filtering traffic
+to our web application.
+On the other hand, RASP is embedded in the web application.
+This allows for RASP to be application context aware
+by understanding the app's runtime environment,
+internal behavior, and data flows.
+Well, that brings us to the end of this lesson.
+Sit tight for our final lesson of this course.

@@ -1,0 +1,176 @@
+Welcome to this lesson
+on Coding Secure Software.
+And in this lesson we'll discuss
+the coding stage of the DevSecOps Lifecycle.
+The meaning of Code Analysis.
+And take a look at some cloud native tools.
+That we can utilize when writing secure software.
+So looking at the DevSecOps lifecycle.
+The code stage is where we perform
+static code analysis, code reviews,
+and other security practices.
+As part of the development
+of our software application.
+So you might be asking what is Code Analysis?
+Code Analysis involves reviewing
+and analyzing the code
+that is being written by our developers.
+In particular, we are concerned
+with reviewing source code.
+Since it is the underlying code
+that our application is written and built off of.
+Now from a security standpoint,
+our team of security ninjas
+will wanna review source code.
+In order to identify
+security vulnerabilities early on
+during the coding of the application
+before it is even built.
+Now, this will save our developers
+the time and effort of rewriting
+source code if a vulnerability is found
+later on during the software's development.
+Our team of ninjas also want to ensure
+that our developers
+are following coding best practices.
+This includes leveraging a secrets manager
+for providing our applications
+programmatic access to API keys,
+passwords, and other sensitive secrets.
+Since having this information
+hard coded into our application
+increases the risk of possible exposure.
+Not only will following best practices
+improve the performance of our application,
+it'll also help mitigate
+the risk of security of vulnerabilities
+appearing within our source code.
+Now, with that said, let's take a look
+at some vulnerable VueJS code
+that accepts unsanitized
+and untrusted user input.
+So looking at this code,
+the name parameter is retrieved
+from the URL query string
+and rendered directly in the template.
+With this vulnerability present,
+a malicious threat actor could perform
+a cross-site scripting attack.
+By providing a malicious value
+to the name parameter
+so that a malicious script
+is rendered in the template.
+A better way of writing
+this JavaScript code would be to leverage
+the DomPurify library to sanitize
+any untrusted user input.
+And this library, is specifically implemented
+to sanitize the document object model
+of web browsers.
+By converting escape characters
+and HTML tags into plain text.
+This ensures that those escape characters
+and tags aren't interpreted by the web browser.
+And mitigates a cross-site scripting attack.
+So with that example out the way,
+what are some cloud native tools
+that our team of security ninjas
+can recommend to our developers
+who are writing software applications
+using Cloud infrastructure?
+So for our developers on AWS,
+one coding tool that can be leveraged
+is Amazon's CodeGuru.
+This service leverages machine learning
+to review and analyze code for issues
+related to security vulnerabilities.
+And coding best practices
+for that particular language.
+Now, the reviewer component
+of CodeGuru will scan and analyze
+our code repositories looking for issues
+within our softwares code.
+While the Profiler component
+uses that information to identify
+coding inefficiencies and make recommendations
+for increasing application performance.
+And saving us some money on our a AWS bill.
+Now, within the reviewer component
+lies security detectors.
+Which will surface security vulnerabilities,
+once the reviewer component
+is done analyzing our code.
+Now for our developers, utilizing GCP.
+Google provides an IDE plugin extension.
+That can be installed
+on many of your favorite IDEs.
+So let's take a look at this installation
+on VS code and see the various GCP integrations
+that the cloud code plugin extension offers.
+So taking a look at VS code on macOs.
+We can find this plugin extension
+on the VS code extension marketplace.
+And looking over the details
+for cloud code, we can see that it offers
+integration with the cloud SDK,
+Google Kubernetes Engine, Cloud Run and more.
+So let's dig further.
+Now searching through the cloud APIs,
+we can see that cloud code
+offers native integration with GCPs,
+identity and access management,
+service account credentials API.
+There's also support
+for the network security API.
+Secret Manager API.
+For providing that programmatic access
+to our API keys, passwords and secrets.
+Like we talked about earlier.
+There's also support
+for the Web Security Scanner API.
+Which we'll take a deeper look
+into in our future lesson titled
+Testing Secure Software.
+So as you can see, there's a plethora
+of GCP integration available
+with this plugin extension.
+So if this has piqued your interest,
+I encourage you to download and install
+this plugin extension on your favorite IDE.
+So with that out the way,
+let's wrap up what we learned in this lesson.
+We talked about the coding stage.
+And how it involves code analysis, code reviews.
+All for the purpose of integrating security.
+While our developers
+actually write the software code.
+Code analysis is the analysis
+and review of source code.
+So when our security ninjas
+are applying the DevSecOps
+methodology to code analysis.
+It's important that we prioritize
+finding security vulnerabilities
+and not just focus on ways
+to improve application performance.
+The first cloud coding tool
+that we discussed was Amazon Code Guru.
+Which uses machine learning to analyze
+our code using the reviewer component
+and surface security vulnerabilities.
+Through the use of security detectors.
+Last we took a look at GCPs Cloud Code,
+which is a plugin extension for IDEs.
+That allows native integration for developers
+utilizing Google Cloud platform
+straight from their IDE
+with integration to security services.
+Like Identity and Access Management.
+And Secret Manager
+for leveraging programmatic access
+to secrets within our code.
+Well, that wraps up our lesson
+on Coding Secure Software.
+And congratulations,
+for reaching the end of this section.
+I'll catch you, in the summary.

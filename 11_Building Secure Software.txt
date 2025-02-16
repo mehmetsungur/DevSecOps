@@ -1,0 +1,207 @@
+Welcome to our first lesson
+of this new section, Building Secure Software.
+And in this lesson,
+we're gonna be taking a look at the building stage
+of the DevSecOps Lifecycle
+as well as discussing Static Application Security Testing,
+the importance of Software Composition Analysis,
+touch on identifying vulnerabilities
+using the Common Vulnerabilities and Exposures,
+and end our lesson with a look at GCP security insights
+for analyzing the security
+of our application container builds.
+So going back to the DevSecOps Lifecycle,
+once we are finished writing code,
+it is built into a running application.
+During the stage, it's important that our security ninjas
+perform Static Application Security Testing
+or SAST for short,
+unit testing, as well as software component analysis
+also known as software composition analysis
+especially as it relates to third party dependencies.
+With that said, I wanna switch gears
+and take a special look at
+Static Application Security Testing or SAST.
+Now SAST is a form of white box testing,
+which means that our SAST tool
+has access to the underlying source code
+and with access to that source code,
+SAST tools automatically review an analyzer source code
+while it is being developed
+with the purpose of uncovering security vulnerabilities
+and issues while that application is undergoing development.
+So the key difference between SAST and code analysis
+is that code analysis is manual in nature
+while SAST tools automate review and analysis of code.
+Now when code is being developed, it is very common
+for developers to leverage third party dependencies.
+And these third party dependencies
+are components such as code libraries,
+which were originally developed by entities and developers
+external to our organization.
+Not only does this save our developers time,
+but as we saw in our lesson, Coding Secure Software,
+leveraging tools such as DOMPurify
+can actually help our security ninjas
+and software developers secure application code
+during the coding stage.
+Now, there's an issue with using external code.
+Since it is developed and maintained by external entities,
+we don't have control over how often that code gets updated.
+Software Composition Analysis
+are tools that scan and analyze open source software,
+software libraries
+and third party dependencies for security vulnerabilities.
+This is an important step of security
+since leveraging these third party dependencies
+that may have security vulnerabilities present
+will lead to a cascading effect of security issues
+everywhere we leverage those code dependencies.
+Vulnerable and outdated components is such an issue
+that it has made the number six entry
+on the OWASP top 10 list.
+Speaking of OWASP,
+they have another project called the Dependency Check
+which is a SCA tool used for discovering
+publicly disclosed security vulnerabilities
+within software code
+that leverages third party dependencies.
+And I've left the link to this tool
+in the resources section of this lesson.
+The Common Vulnerabilities and Exposures program
+assigns vulnerabilities, CVE numbers,
+that help identify, define and catalog
+publicly disclose security vulnerabilities.
+And one example of a security vulnerability
+goes by the CVE number 2021-44228
+commonly known as Log4Shell.
+Now, this vulnerability
+was present in the Log4j software library
+leveraged by many Apache Web servers.
+And since so many web servers leveraged this dependency,
+it made them vulnerable to remote code execution
+as a result of having this Log4j Service.
+Now, since that time, this vulnerability has been patched
+in newer versions of the service
+which highlights how important it is
+to pay attention to new updates,
+identify commonly known vulnerabilities
+and quickly remediate those systems that are affected.
+Now, with that said,
+let's take a look at how our security ninjas
+can assist our developers
+with integrating security during the building
+of app containers on Google Cloud platform.
+And for this example,
+we'll be taking a special look at GCP's Security Insights
+for analyzing vulnerabilities within our containers.
+And once we're done analyzing the security insights,
+I wanna encourage you to try out the hands-on lab,
+Securing Containerized GCP web apps.
+So looking at these lists of vulnerabilities
+within our GCP container,
+we can see that a total of nine security vulnerabilities
+were discovered.
+Each vulnerability is identified by its CVE number
+that help us uniquely identify
+the effects of the vulnerability
+as well as possible remediation steps.
+Our security ninjas also can take a look at
+the common vulnerability scoring system rating
+related to each CVE.
+These ratings range from zero to 10
+and are labeled low, medium, high and critical
+according to their particular rating.
+So a CVE with a CVSS rating of 8.1
+would be categorized as high.
+Now you may be wondering
+what are these CVSS ratings based on?
+And the answer to that is broken down into three metrics.
+The base score metric,
+which takes a look at the attack vector
+that can be used to exploit that vulnerability,
+the complexity of actually exploiting the vulnerability
+as well as the level of user interaction required,
+privileges needed
+and other factors.
+The temporal score metric takes into account
+things such as exploit code maturity,
+remediation level, and report confidence.
+These temporal base metrics
+consider the exploitability of the vulnerability
+and can be impacted
+based on the availability of security patches and updates.
+Last, the environmental base metrics
+are based on the characteristics of the environment.
+These metrics allow organizations to tailor base metrics
+like attack vector and user interaction
+to particular environments.
+This gives the organization flexibility
+to prioritize different vulnerabilities
+based on a number of factors
+like exposure to potential attackers.
+Our security ninjas can also leverage GCP Security Insights
+to see the supply chain levels for software artifacts.
+And the software supply chain deals with all the steps
+involved with software development
+to its deployment into production.
+This includes the third party dependencies used,
+technologies involved, all the way down to the processes
+and people involved as well.
+Now the SLSA has four levels,
+with level one representing bill processes
+that are fully automated, fully scripted
+and produced metadata.
+Level two represents software that has version control
+and a hosted build service
+that generates authenticated metadata.
+Level three takes it up a notch
+where the software source and build services
+meets specific standards that guarantee
+that the source and metadata integrity can be audited.
+Level four represents a build process that is reproducible
+and requires a two-person review
+for any changes to the software.
+So as you can see, the higher the SLSA level,
+the more mature and secure
+that software build is considered to be.
+By leveraging cloud native security tools
+during the build stage of the DevSecOps lifecycle,
+our security ninjas
+can better identify security vulnerabilities
+within our application containers.
+So that brings us to the end of our lesson.
+Let's recap.
+We discussed the building stage
+as well as the different types of security testing
+and analysis tools that we could use
+on our software application builds.
+We took a look at static application security testing
+and how it's a white box approach
+to automated code analysis.
+This means that this particular type of testing
+has access to the software application source code.
+We discussed software composition analysis
+which scans open source software
+and third-party dependencies for security vulnerabilities.
+We also touched on
+the Common Vulnerabilities and Exposures program
+and how CVE numbers
+uniquely identify security vulnerabilities.
+This ensures that cybersecurity professionals
+are on the same page
+when discussing a particular vulnerability.
+At the end of this lesson,
+we took a look at GCP security insights.
+Not only does this GCP feature scan container builds
+for security vulnerabilities,
+it also identifies those vulnerabilities by CVE number,
+gives them a CVSS rating,
+which can range from low all the way to critical
+and provides a supply chain level
+for software artifacts rating
+based on the software supply chain's security
+and maturity level.
+Well, that brings us to the end of this lesson.
+Stay tuned as we take a look at the testing stage
+of the DevSecOps Lifecycle.

@@ -1,0 +1,75 @@
+We've come to the end of our section,
+DevSecOps Fundamentals,
+where we'll review the following lessons:
+Software Security and DevSecOps Lifecycle.
+In our first lesson titled Software Security,
+we talked about security in software development,
+where we first looked at the six stages
+in the software development lifecycle
+and took a deep dive
+into the Secure Software Development Framework
+created by NIST.
+This framework involved preparing the organization,
+protecting the software application,
+producing well-structured software,
+as well as responding to security vulnerabilities.
+Next, we defined application security
+and how we can provide security to our applications
+by using security best practices,
+discovering and remediating vulnerabilities
+through the process of vulnerability management
+and implementing security controls
+to prevent attacks and protect our software applications.
+In the second half of this lesson,
+we compare DevOps to DevSecOps,
+where DevSecOps integrates security
+alongside development and IT operations teams.
+This methodology also ceased to shift left,
+which involves integrating security best practices
+and automation early on
+in the software development lifecycle.
+And finally, we discussed software security in the cloud,
+where our group of security ninjas
+must consider shared responsibility
+as it relates to the security of our cloud resources
+and what portions of cloud security we are responsible for
+versus what the cloud service provider is responsible for.
+We also discussed how the security ninjas
+must consider the implementation of security controls
+in the cloud.
+These security controls can include encryption,
+as well as access controls,
+but it's important that our ninjas
+have multiple security controls,
+so that there isn't a single point of failure,
+so that the security controls scale
+as our cloud infrastructure grows.
+In our final lesson, DevSecOps Lifecycle,
+we took a look at continuous integration
+and how it merges all the copies of developer code
+into a mainline code base.
+Not only does the speed up the software development process,
+but it also provides consistency of written code
+and ensures that our developers
+are working on the most current copy of source code.
+After discussing CI, we took a look at CD,
+which often stands for continuous delivery,
+where code is pushed to the repository,
+while continuous deployment takes that a step further
+and automatically deploys code
+to the production environment.
+Once we define CI/CD,
+we took a look at how these concepts relate
+to the DevSecOps methodology
+and their place in the DevSecOps lifecycle.
+We also discussed how our security ninjas
+can integrate security
+at the different stages of this lifecycle
+by shifting left in integrating security practices early on
+and at the start of software development.
+This lifecycle is a never-ending process
+centered around continuous integration
+and delivery of software releases and deployment.
+With all that out the way,
+stay tuned for our next section,
+Planning and Coding Secure Software.

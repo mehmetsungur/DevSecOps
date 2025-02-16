@@ -1,0 +1,293 @@
+Hey, and welcome to this lesson:
+Releasing Secure Software.
+In this lesson, we'll talk about
+the releasing stage for the DevSecOps lifecycle.
+Then take a look at the different steps
+involved with configuration management.
+Take a look at access management
+as it relates to containers, network security
+and most importantly, identity and access management.
+And finally, we'll end our lesson
+by taking a look at different scenarios
+where our security ninjas can implement data security.
+So going back to the DevSecOps lifecycle,
+the release stage involves
+performing configuration management,
+access control management,
+as well as data security management.
+And since this is the stage
+prior to deployment of our application,
+it's important that we understand
+the shared responsibility model
+that our team of security ninjas
+should be intimately familiar with,
+especially before we deploy our application
+on cloud infrastructure.
+So looking at this model
+where we have on-premises,
+which is highlighted in all green,
+since it represents the fact
+that we are responsible for security at all levels
+when utilizing on-premises infrastructure.
+As we move on to the different cloud service models,
+such as infrastructure as a service,
+we can see that the cloud service provider
+is responsible for the virtualization platforms,
+as well as the physical servers, storage
+and network infrastructure that hosts our operating systems,
+all the way up to the applications running in the cloud.
+So our organization is responsible
+for patching those operating systems,
+as well as maintaining security of the middleware,
+runtime and application, as well as its associated data.
+When we take a look at platform as a service,
+which is more suited for developers,
+since the cloud service provider
+takes over responsibility for everything from the runtime,
+all the way down to the network infrastructure.
+So for our developers utilizing platform as a service,
+it's important that our team of security ninjas
+help those developers secure the application,
+as well as the data associated with that application.
+Finally, we have software as a service,
+where the software application
+is developed and maintained by the cloud service provider.
+With that said, the cloud service provider
+is responsible for everything from the application,
+all the way down to the network infrastructure
+used to host that application on their cloud platform.
+So taking a look at the shared responsibility model,
+we can see where our organization
+must implement security controls
+versus the responsibility of security
+assigned to the cloud service provider.
+So with that in mind,
+it's important that we practice configuration management
+when utilizing infrastructure
+or platform as a service cloud service models.
+And basically, configuration management entails
+managing system and application configurations
+so that our security team,
+development team and operations teams
+all understand how exactly our application is configured
+to run in their respective environments.
+So the first step in configuration management
+deals with identification.
+This is where we want to identify
+all of the different configurations
+and possible configurations that we can have
+related to our application.
+Once we've got those configurations identified,
+it's important that we establish
+a baseline configuration,
+which represents a state
+of known functional configuration
+suitable for running our application.
+Baseline configurations will also be used
+as a restoration point.
+That is if we make a change in configurations
+that produces security vulnerabilities
+or other undesirable effects,
+we can revert back to the baseline configuration
+in order to eliminate those effects.
+And once we've identified baseline configurations,
+our organization can move on to change management.
+Now, change management, as the name implies,
+involves managing changes in an organized way
+that also provides visibility
+to all stakeholders and teams
+involved with the application.
+So anytime that we make a change to configurations,
+the associated teams are prepared
+and aware of those changes being made.
+The next step in configuration management involves auditing.
+Basically, auditors will examine recent changes
+in order to ensure that recent changes in configuration
+are functional and effective.
+The next step in configuration management
+is documenting our new configurations,
+which includes the steps that we took
+to change configurations,
+as well as steps for reverting
+back to the baseline if necessary.
+Last but certainly not least,
+we wanna verify that changes have been made
+and that all prior steps have been performed
+as a part of configuration management.
+Now, configuration management
+may seem like a no-brainer
+but in the real world with large organizations
+filled with several development team members
+and IT operations team members
+configuration changes must be managed
+so that one person cannot make a configuration change
+and disrupt the workflow for another team.
+With that out the way, let's take a look at
+access management and how we can control
+access to our remote cloud infrastructure and resources.
+With the predominance of containers
+being utilized in cloud-based software development,
+it's important that our team of security ninjas
+properly secure those containers.
+This includes leveraging trusted images,
+using cloud-based services,
+like binary authorization on Google Cloud platform.
+These type of services ensure that only images
+signed with a digital signature
+can be leveraged within our cloud infrastructure.
+Pod security policies should also be leveraged
+for securing containers running on Kubernetes.
+And even though many cloud service providers
+are migrating away from pod security policies
+and utilizing the pod security and mission controller,
+their overall theme remains the same.
+Pod security enables fine grained and granular control
+over the security of containers
+by restricting the use of certain privileges
+as it relates to the containers within our Kubernetes pod.
+Another great practice concerning container security
+is the removal of any unnecessary components,
+like binaries and libraries,
+that could possibly be leveraged against our application
+if that container becomes compromised.
+Now, the meat and potatoes of access control
+really lies in identity and access management,
+or IAM for short.
+Identity and access management
+allows our team of security ninjas
+controls over authentication
+for verifying the identities of our principles,
+which is just a fancy word
+for our users and service accounts.
+But our principles should also be assigned
+role-based access based on the principle of lease privilege,
+so that we only give principles
+the minimal level of access they need
+to perform their job role or function.
+And I'm not just talking about human users either.
+If our cloud application interacts
+with another one of our cloud resources
+we should ensure that proper IAM policies
+are in place that restrict the actions of our application
+and its communication with the cloud resource.
+So if our application only needs access
+to the cloud resource to retrieve certain data,
+you should restrict that IAM policy
+so that only data can be retrieved
+from that particular application.
+Privileged identity management
+where we regulate the use of privileged actions
+should also be leveraged
+by our security ninjas for limiting the actions
+of members on our IT operations teams.
+Cloud service providers, such as Microsoft's Azure,
+allow organizations to configure
+privileged identity management restrictions
+like just in time access.
+This type of access control
+restricts access to Azure VMs
+based on inbound traffic and for a time period
+that has previously been configured.
+And by doing so, this locks down access
+to sensitive resources and limits the opportunity
+for a threat actor to attack.
+Our security ninjas must also be aware of network security
+for our cloud infrastructure.
+This includes properly architecting
+virtual private clouds to provide network isolation
+of our applications infrastructure
+and connected cloud resources.
+For applications or components utilizing VMs
+it's important that we configure security groups
+at the instance level
+and network firewalls at the network level
+for filtering traffic between our cloud resources.
+Now, this is a very high level look at access management,
+so be sure to check out the lesson resources
+and do some deeper research on cloud IAM
+and cloud-based network security.
+Now moving on to data security.
+And when we talk about data security,
+we need to look at the various ways
+that our security ninjas can protect data
+stored in the cloud.
+And it's inevitable that at some point,
+we will need to store sensitive data
+in our cloud infrastructure.
+So the best way to protect the
+confidentiality of that data is to encrypt it.
+And services like AWS's Key Management Service
+enables our security ninjas
+to easily manage and rotate encryption keys
+so that our data in the cloud remains confidential.
+Our security ninjas can also leverage
+purview information protection
+for labeling sensitive data
+stored in the cloud, as well as data loss prevention.
+Purview information protection
+allows our security ninjas to set alarms
+just in case an insider threat
+tries to steal company information
+or exfiltrate sensitive data.
+Using these alarms, our security ninjas
+are alerted so that they can take swift action
+in eliminating the threat.
+Our security ninjas can also leverage
+cloud-based secrets management
+utilizing services like GCP's Secret Manager.
+This service will handle the management
+and rotation of API keys, digital certificates,
+passwords, and much, much more.
+So using these cloud native security tools,
+our security ninjas can properly secure
+data stored on cloud infrastructure.
+With that said, let's wrap up this lesson.
+We begin the lesson by taking a look
+at the releasing stage of the DevSecOps lifecycle,
+which included management of configurations,
+access controls, and data security.
+We also took a deep dive into
+the shared responsibility model
+and how our responsibility for cloud security varies
+whether using infrastructure as a service,
+platform as a service, or software as a service.
+When discussing configuration management,
+we talked about the importance
+of setting a configuration baseline
+for known working configuration
+for our organization to revert back to
+in case our configuration changes
+have undesirable security or performance effects.
+In regards to configuration management,
+it's also important that we audit our configuration changes
+and document all steps involved in a change.
+When discussing access management,
+we took a look at the importance of container security,
+like leveraging the Pod Security emissions controller,
+for restricting privileges associated with Kubernetes Pods.
+We also discussed the importance of IAM policies
+and assigning the principle of lease privilege
+so that our users and other cloud resources
+do not have more access than they actually need,
+especially if that user account becomes compromised
+by a malicious threat actor.
+The last thing we talked about with access management
+was the need for network security such as VPCs,
+firewalls and security groups for protecting network traffic
+between our cloud resources, instances
+and overall infrastructure.
+We finish our lesson by diving into data security
+and how we can leverage key management services
+for encrypting our data in the cloud
+while data loss prevention services
+such as Azure's Purview Information Protection
+help prevent data exfiltration
+of sensitive data stored within the cloud.
+Last, we talked about how cloud-based
+secrets management services like GCP's Secret Manager
+can help our organization store and rotate API keys,
+passwords, and digital certificates.
+While that wraps up this lesson.
+I'll catch you in the next lesson
+as we move on to the deploying stage
+of the DevSecOps Lifecycle.

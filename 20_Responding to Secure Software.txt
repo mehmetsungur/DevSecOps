@@ -1,0 +1,238 @@
+Congratulations on reaching the final lesson
+of this course Responding to Secure Software.
+And in this lesson we'll be taking a look
+at the responding stage
+as well as the NIST incident response lifecycle
+for handling security events,
+taking a look at cloud API security,
+application load balancing
+and distributed denial of service attacks
+also known as DDoS attacks.
+So the final stage
+in the DevSecOps lifecycle is the response stage
+and this is where we respond
+to security incidents that we have detected
+or identified through monitoring of our application.
+Another important thing to remember about this stage
+is that once these incidents have been responded to,
+we start back at the life cycle by planning
+and coding new changes into our application
+that help mitigate future similar security events.
+Now, when it comes to incident response
+NIST has provided a framework
+within their special publication 861
+that details the incident response lifecycle.
+So let's dive into that lifecycle
+and how our team of security ninjas can properly respond
+to security incidents.
+Now, the first phase of this lifecycle involves preparation
+and during the stage, this is where we try to gain knowledge
+about the threat actors targeting our organization
+and applications,
+as well as setting up security controls
+that defend our assets and resources.
+One particularly important step
+in this preparation phase is the creation of a contact list
+so that we have the proper visibility
+and escalation of security incidents
+to our computer security incident response team
+that consists of our security ninjas
+and other members of the organization that can aid
+in responding to our security incident.
+After the preparation phase,
+we move on to the detection and analysis phase.
+During this phase,
+we generally monitors for malicious activity,
+analyze different security events in order to determine
+if they're actually a security incident
+and most importantly, document malicious activity
+and send that documentation
+to the computer security incident response team
+if a security event is determined to be a security incident.
+Now, if it's determined
+that a security incident has occurred,
+the incident response lifecycle moves into the containment,
+eradication and recovery phase.
+During this phase, it's important that we stop the bleeding
+and take actions that mitigate the cybersecurity attack
+and or data exfiltration.
+So once that attack has been contained
+and the malware or threat actors have been removed
+from the environment,
+we can then take steps to properly recover any systems
+and return to normal operations.
+Now, just because malware has been removed,
+and our organization has returned to normal operations,
+doesn't mean that the incident response life cycle is over.
+In the final phase of the life cycle,
+known as the post-incident phase,
+we gather all that documentation, communications
+and evidence from the previous phases and analyze them
+in order to understand what we could have done better
+and how we prevent this type
+of incident from occurring in the future.
+This type of post-incident analysis
+includes a wide range of organizational members,
+such as those in leadership
+and not just our technical IT teams.
+It's also important to remember
+that regulatory compliance may dictate communication
+to external parties that have been affected
+by the security incident.
+So if a security incident occurred that resulted
+in a data breach
+where customers social security numbers were exfiltrated
+by threat actors,
+it's important that we alert our customers to these events
+so that they can properly protect their information
+through measures like financial credit locking.
+Now, let's talk about cloud API security,
+especially since many cloud services and resources
+leverage APIs as their primary method of communication.
+And when it comes to cloud APIs, leveraging services,
+like API gateways,
+help protect our cloud APIs with the following features;
+so one of the features of API gateways is
+that they offer authentication and authorization
+for users and resources seeking to use our APIs.
+So our team of security ninjas can leverage identity
+and access management policies
+that require user authorization
+before checking that a user is authorized
+to access that specific cloud resource.
+Another feature of API gateways is rate limiting
+or throttling.
+This security mechanism can be leveraged to limit the amount
+of API requests or specific API methods and protect our APIs
+from excessive usage.
+In basic terms, this protects the availability of our APIs.
+API gateways also allow for generation
+and rotation of API keys.
+These keys are used to control access
+to specific API resources and can be associated
+with specific clients so that we can better monitor usage
+by that particular client.
+API gateways also offer HTTPS encryption
+of a API communication.
+So by leveraging TLS certificates,
+we can ensure confidentiality of our API communication
+and security of API data in transit.
+API gateways also provide request validation.
+This feature helps prevent malicious API requests
+by making sure that the request header, body payload
+and query parameters are not malformed
+and meet the specific criteria that we have defined
+using the API gateway.
+So these are some great features that our team
+of security ninjas can leverage using AWS API gateway,
+Azure API management, and Google Cloud endpoints.
+Now, let's talk about app load balancing.
+App load balancing is performed
+by web application load balancers,
+and these load balancers protect the availability
+of our web apps by intelligently distributing web traffic
+to different instances or servers of our web application.
+So let's take a look at what that looks like.
+Without a app load balancer,
+we could have a significant number of web clients
+overwhelm our web server with a large amount of web traffic,
+thus causing that server to crash
+and making that web app unavailable to our end users,
+which is really bad for our organization
+since that can mean that million dollars
+of revenue is being lost
+while the application is unavailable.
+So by introducing an app load balancer,
+between both the web clients and web servers,
+we can have web client traffic intercepted
+by the load balancer
+and distributed to our different web app servers.
+This balances the load of web traffic like the name implies
+and keeps our application up and running.
+So for our team of security ninjas,
+they can leverage the app load balancer
+on AWS application gateway on Azure
+or cloud load balancing on GCP.
+Application load balancers
+typically help support the availability
+of our web app from becoming unavailable
+due to overwhelming legitimate web client traffic.
+But in the world of cybersecurity
+there are always adversaries
+and threat actors
+that seek to maliciously attack the availability
+of our web applications.
+With that said,
+let's talk about distributed denial of service attacks.
+This particular type
+of attack leverages amplification networks,
+which is a bunch of different computers distributed
+all across the internet that the attacker can leverage
+to multiply and amplify their attack
+and overwhelm the targeted web application.
+So let's take a brief look at what a DDoS attack looks like.
+And as you can see
+we have our attacker on the left hand-side
+who is actively infecting many other systems
+with malware all across the internet.
+Once this amplification network
+of distributed systems are infected,
+they are considered a botnet
+and this botnet is now under the control of the attacker.
+So whenever the attacker issues a command
+to the botnet to target a specific web application
+that victim is overwhelmed
+with requests coming from the botnet
+thus crashing the application and rendering it unavailable.
+So in order to prevent these type of attacks,
+the three major cloud service providers
+offer protection services catered to combating DDoS attacks.
+Not only do these services help organizations
+quickly identify DDoS attacks,
+and mitigate malicious traffic flowing
+to their applications,
+but the three major cloud service providers
+also offer premium DDoS services that give our team
+of security ninjas access
+to the cloud service providers DDoS incident response teams
+for quicker analysis and mitigation of these DDoS attacks.
+With that said, let's wrap up this lesson.
+We took a look at the responding stage
+of the DevSecOps lifecycle where we respond
+to cybersecurity attacks
+and issues identified in the monitoring phase.
+Next, we took a look
+at the NIST incident response lifecycle
+detailed in special publication 800-61,
+which involves preparation
+for cybersecurity incidents using security controls,
+detection and analysis of security events
+to determine whether or not a security event
+is an actual security incident.
+And if an event is determined to be an incident,
+we move into the containment, eradication
+and recovery phase for remediating the security incident.
+Finally, in the post-incident phase,
+we reviewed the documentation gathered
+in the previous phases,
+formulate lessons learned from the incident
+and contact external parties were appropriate.
+Next, we took a look at cloud API security, API management
+and how cloud API gateways can provide proper authentication
+and authorization of our API resources,
+encryption of our API communication,
+and protect our API availability
+through the usage of rate limiting and throttling.
+In the last part of this lesson,
+we discussed protecting web application availability
+using app load balancing to distribute
+and manage traffic flow to our web apps.
+App load balancers protect the availability
+of our web app, typically from legitimate users.
+DDoS attacks involve malicious threat actors,
+leveraging amplification networks
+like botnets to specifically target our web application
+and crash that web application
+so that it is no longer available to other users.
+Well, that brings us to the end of our section;
+stay tuned for the section summary.

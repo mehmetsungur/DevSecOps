@@ -1,0 +1,109 @@
+Welcome to our new lesson
+on the DevSecOps lifecycle.
+And in this lesson,
+we will be discussing continuous integration,
+continuous deployment,
+and finally, the DevSecOps lifecycle.
+Now, if you're not familiar with the term CI/CD pipeline,
+then it's important that we understand
+what the purpose of this pipeline is,
+as well as looking at continuous integration
+and continuous deployment in depth.
+Now, this is a highly automated pipeline
+that automates many of the processes
+involved with software development.
+And by automating these processes, we can drive efficiency
+so that continuous improvement to the coding, building,
+testing, releasing, and deployment of code
+can take place rapidly and more efficiently.
+Now, continuous integration
+merges all the different copies of development code
+into a mainline code base.
+Now, this is important
+because as software is being developed
+typically by multiple developers, the source code repository
+will be constantly changed and modified.
+And by merging all these changes into a mainline code base,
+we can ensure that developers are working
+on the most current version of that code.
+Not only that, but continuous integration plays a big role
+in the automation of software building and testing.
+Since continuous integration automates the build
+and test phases of the DevOps methodology,
+new builds of software can be tested
+in a rapid and efficient manner.
+Now, the second part of the CI/CD pipeline, CD,
+can represent both continuous delivery,
+continuous deployment, or both,
+with the term continuous delivery
+frequently and automatically pushes new code
+to the repository,
+while continuous deployment takes it a step further
+by automatically deploying that code
+to the production environment.
+All of this allows for frequent, continuous,
+and most importantly, reliable code pushes
+and deployments of our software applications
+to our end users.
+Now with CI/CD defined, let's take a look at how it relates
+to the DevSecOps lifecycle.
+Now, this lifecycle is based on the DevOps lifecycle
+and our team of security ninjas should always be thinking
+about how we can integrate security
+at each stage during our software development.
+This includes threat modeling and risk assessment
+when planning our software applications,
+performing code analysis, and manually reviewing source code
+for security vulnerabilities,
+performing static application security testing
+when building our software applications,
+and moving on to dynamic application security testing
+when testing our software applications prior to release.
+And as you can see, these stages are associated
+with the continuous integration of our software code.
+Whereas in the second part of this lifecycle,
+our team of security ninjas must consider
+penetration testing during the deploy stage,
+then leverage security information
+and event management platforms
+for visibility of our software applications
+so that when security incidents occur,
+our team of ninjas can quickly resolve those issues
+and remediate the effects of any cybersecurity attacks.
+This second half of stages completes a DevSecOps lifecycle
+so that we can loop around
+and restart with planning software application changes
+and coding those changes as part of continuous integration.
+So for the remainder of this course,
+we will be following this lifecycle, and more importantly,
+taking a look at how we can apply DevSecOps
+to our software applications being coded
+and deployed on the organization's cloud infrastructure.
+So let's summarize this lesson.
+We took a look at continuous integration
+and how it merges all the copies of developer code
+into a mainline code base.
+Not only does it speed up the software development process,
+but it also provides consistency of written code
+and ensures that our developers
+are working on the most current copy of source code.
+After discussing CI, we took a look at CD,
+which often stands for continuous delivery
+where code is pushed to the repository,
+while continuous deployment takes that a step further
+and automatically deploys code
+to the production environment.
+Once we defined CI/CD, we took a look at how these concepts
+relate to the DevSecOps methodology
+and their place in the DevSecOps lifecycle.
+We also discuss how our security ninjas
+can integrate security
+at the different stages of this lifecycle by shifting left
+and integrating security practices early on
+and at the start of software development.
+This lifecycle is a never ending process
+centered around continuous integration
+and delivery of software releases and deployment.
+Congratulations on reaching the end of this section
+and stay tuned for the summary
+where we'll review everything we learned in this section.

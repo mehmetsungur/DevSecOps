@@ -1,0 +1,9 @@
+Welcome back to this new section,
+Planning and Coding Secure Software.
+And in this section, we'll look at the lesson,
+Planning Secure Software,
+which involves concepts such as threat modeling
+and then move on to the lesson, Coding Secure Software,
+where we'll touch on topics such as code analysis
+and static application security testing.
+So with that said, let's get started.

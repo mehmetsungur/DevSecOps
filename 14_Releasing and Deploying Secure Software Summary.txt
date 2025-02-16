@@ -1,0 +1,82 @@
+Congratulations on reaching the end
+of the section and welcome to the section summary
+for releasing and deploying secure software.
+In this summary, we'll take a look
+at the lessons releasing secure software
+and deploying secure software.
+In the lesson releasing secure software, we begin the lesson
+by taking a look at the releasing stage
+of the DevSecOps lifecycle, which included management
+of configurations, access controls, and data security.
+We also took a deep dive
+into the shared responsibility model
+and how our responsibility for cloud security varies
+whether using infrastructure as a service,
+platform as a service, or software as a service.
+When discussing configuration management, we talked
+about the importance of setting a configuration baseline
+for known working configuration
+for our organization to revert back to
+in case our configuration changes have undesirable security
+or performance effects.
+In regards to configuration management, it's also important
+that we audit our configuration changes
+and document all steps involved in a change.
+When discussing access management, we took a look
+at the importance of container security
+like leveraging the pod security emissions controller
+for restricting privileges associated with Kubernetes pods.
+We also discussed the importance of IAM policies
+and assigning the principle of lease privilege so
+that our users and other cloud resources do not
+have more access than they actually need, especially
+if that user account becomes compromised
+by a malicious threat actor.
+The last thing we talked about with access management
+was a need for network security such as VPCs, firewalls,
+and security groups for protecting network traffic
+between our cloud resources, instances,
+and overall infrastructure.
+We finish our lesson by diving into data security
+and how we can leverage key management services
+for encrypting our data in the cloud.
+While data loss prevention services such as Azure's per-view
+information protection help prevent data exfiltration
+of sensitive data stored within the cloud.
+Last, we talked about how cloud-based secrets management
+services like GCP Secret Manager can help our organization
+store and rotate API keys, passwords,
+and digital certificates.
+In the lesson deploying secure software, we talked
+about the deploying stage of the DevSecOps lifecycle
+and how it's important to identify the differences
+between environments and perform penetration testing.
+The environments that we discussed included Dev,
+where coding and testing is taking place.
+Stage, which is a replication
+of the Prod environment used for testing and
+of course the live and active production environment used
+by our end users.
+During the second half of this lesson,
+we discussed infrastructure as code and how we can
+leverage code to automate our cloud deployments and provide
+a level consistency.
+Infrastructure as code also allows us to design
+secure templates for our cloud infrastructure deployments
+and properly manage the lifecycle
+of our cloud infrastructure.
+And when it comes to infrastructure as code,
+you have the following cloud services
+from the big three cloud service providers,
+Cloud Deployment Manager on GCP, Cloud Formation on AWS,
+and Azure Resource Manager on Azure.
+The last topic we discussed was penetration testing.
+In this form of offensive security testing
+involves actively exploiting discovered vulnerabilities.
+It also simulates real world cyber attacks so that our team
+of security ninjas can configure our cloud infrastructure
+with the proper security controls
+in order to ward off these real world scenarios.
+Well, that does it for this section.
+Catch me in the next section
+which happens to be our last section for this course.

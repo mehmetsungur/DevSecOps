@@ -1,0 +1,177 @@
+Welcome to this new lesson,
+Deploying Secure Software.
+And in this lesson we're gonna take a look
+at the deploying stage as well
+as the various software environments.
+And once that's covered, we will move on
+to discussing infrastructure as code and wrap up
+our lesson by taking a look at penetration testing.
+So looking back at the DevSecOps lifecycle,
+the deploy stage follows the release
+of software and involves identifying the differences
+between our dev stage and prod environments as well
+as performing penetration testing.
+So let's discuss the various deployment environments
+involved with software development.
+And the first environment we have is the development
+environment or dev for short.
+This is the environment that our developers use
+for writing our software code during the coding stage
+and where our security ninjas
+along with our quality assurance teams
+test our software application
+during the build and test stages.
+Now, once our application has been fully tested
+it moves on to the staging environment, or stage for short.
+And this staging environment is a replication
+of the production environment that we'll talk about shortly.
+Now, the purpose of the staging environment is
+to perform testing on our application using an
+environment that simulates its real world deployment.
+The great thing about the stage environment is that
+if our tests happen to break the application in some form
+it doesn't affect our real world end users.
+Last, we have a production environment, also known as prod.
+This is our live environment
+and typically publicly facing by real world end users.
+So once we've performed testing and development
+and have a secure and working build of our application,
+it is deployed to staging
+for more testing and finally deployed to production.
+Now it's important to note that some organizations
+practice what is called a blue-green deployment.
+In this deployment strategy involves directing
+live end user traffic to the staging environment
+when application changes are made.
+This allows development teams to quickly deploy software
+changes and swap or roll back to the production environment
+if changes produce a undesirable effect.
+Now, an important concept related to cloud infrastructure
+is what is known as infrastructure as code.
+An infrastructure as code enables both automation
+and consistency by allowing our IT operations teams
+the ability to build and modify cloud infrastructure
+using code.
+And this is because manually creating infrastructure
+could result in deviations of infrastructure
+if one of our cloud engineers misses a step
+or forgets a configuration
+when manually creating cloud infrastructure.
+By using infrastructure as code,
+not only can we automate changes to cloud infrastructure
+but we can be sure that these changes are consistent
+since the same code can be used over and over again
+and also eliminating the opportunity for human error.
+Another security property of infrastructure
+as code is the ability to design secure templates.
+So basically we can create a template
+of cloud infrastructure that we have previously
+and properly configured and using that template
+for deploying new cloud infrastructure.
+And last, we can leverage infrastructure
+as code to manage the lifecycle of our cloud infrastructure.
+This includes provisioning
+and deprovisioning cloud infrastructure so
+that we don't have old and forgotten infrastructure deployed
+within our cloud environment.
+So concerning infrastructure as code
+the big three cloud service providers leverage
+the following services.
+Cloud deployment manager on Google Cloud platform
+for deploying Google Cloud services
+like Cloud SQL, Compute Engine, and many other resources.
+And on AWS, there's CloudFormation that allows you
+to deploy your AWS resources
+and services using YAML or JSON.
+And with that said, I want to take some time
+to show you an example of infrastructure
+as code using AWS cloud formation.
+And looking at this little snippet
+of infrastructure as code, we can see that this code snippet
+in particular will grant SSH access
+via TCP port 22 and applies this property
+to an EC2 security group, thus allowing inbound
+and outbound SSH traffic to our EC2 instances
+within that particular security group.
+Now when it comes to Azure, our IT operations team
+can leverage the Azure Resource Manager for deploying
+and managing Azure resources using infrastructure as code.
+Now, penetration testing, or pen testing for short,
+is a form of security testing where pen testers scan
+and attempt to infiltrate IT infrastructure
+in order to discover vulnerabilities and exploit
+those discovered vulnerabilities.
+And pen testing can be performed on web applications,
+internal network environments,
+and of course, cloud infrastructure.
+By simulating real world attacks, our team
+of security ninjas can configure the proper security
+controls to protect our cloud infrastructure
+from real world threat actors.
+So let's look at the various stages involved
+with penetration testing.
+So the first stage of pen testing is reconnaissance where
+the tester obtains information about the target
+like gathering information about the employees that work
+at the targeted organization using social media platforms
+like LinkedIn or searching the company's public website
+for more information.
+Once that is done, the penetration tester begins enumeration
+where they actively obtain more information
+about the target using offensive security tools like Nmap.
+Once the target is enumerated,
+the pen tester analyzes their findings
+and identifies potential security vulnerabilities
+that they can take advantage of and exploit.
+During exploitation, the pen tester actively
+exploits the discovered vulnerabilities identified earlier.
+And the final stage of penetration testing
+involves the pen tester producing a report
+formally addressed to management
+that documents the identified security vulnerabilities
+and methods used to exploit those vulnerabilities.
+Now, penetration testing is one
+of my favorite topics concerning cybersecurity
+and Pluralsight offers a variety of courses related
+to ethical hacking that I recommend you check out.
+Now, it's very important to note
+that penetration testing requires the approval
+of the highest level of management.
+So performing any of these steps
+without prior and proper approval
+from the organization may be considered illegal
+and even criminal in some cases.
+So let's go ahead and summarize this lesson.
+We talked about the deploying stage
+of the DevSecOps lifecycle
+and how it's important to identify the differences
+between environments and perform penetration testing.
+The environments that we discussed included dev where coding
+and testing is taking place,
+stage, which is a replication
+of the prod environment used for testing
+and of course the live
+and active production environment used by our end users.
+During the second half of this lesson,
+we discussed infrastructure as code and how
+we can leverage code to automate our cloud deployments
+and provide a level of consistency.
+Infrastructure as code also allows us
+to design secure templates
+for our cloud infrastructure deployments
+and properly manage the lifecycle
+of our cloud infrastructure.
+And when it comes to infrastructure as code,
+you have the following cloud services
+from the big three cloud service providers.
+Cloud Deployment Manager on GCP,
+CloudFormation on AWS, and Azure Resource Manager on Azure.
+The last topic we discussed was penetration testing.
+And this form of offensive security testing
+involves actively exploiting discovered vulnerabilities.
+It also simulates real world cyber attacks so that our team
+of security ninjas can configure our cloud infrastructure
+with the proper security controls
+in order to ward off these real world scenarios.
+Well, that brings us to the end of this lesson and section.
+So join me in the upcoming section summary.

@@ -1,0 +1,6 @@
+Welcome to this new section,
+Building and Testing Secure Software.
+And in this section, we'll have lessons
+on building secure software and testing secure software.
+So let's continue learning about DevSecOps
+in the cloud and get started on our first lesson.

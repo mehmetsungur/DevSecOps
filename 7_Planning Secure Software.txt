@@ -1,0 +1,222 @@
+Welcome to the lesson
+Planning Secure Software.
+In this lesson, we'll learn about the planning stage
+of the DevSecOps lifecycle
+and how we can apply security
+to our future software application running in the cloud.
+Now, a large part of this stage involves threat modeling
+so we'll take a deep dive
+into the concept of threat modeling
+and take a look at some threat models.
+Last, we'll take a look at threats
+specific to cloud infrastructure and resources.
+Now, going back to our DevSecOps lifecycle,
+the planning stage is the first stage of this lifecycle,
+and in this stage, our security ninjas
+will need to focus on
+a strategy for security analysis
+and take a look at different methods of security testing
+and when that testing will occur.
+So with that in mind, the main way we can shift left
+and integrate security in this first stage
+of software development is through the use
+of threat modeling.
+And what threat models do
+is represent the security of our software application
+in both a visual and documented manner.
+Now, risk reduction plays a huge part in threat modeling.
+It allows us to focus and prioritize
+our security controls and efforts
+based on threats and the likelihood
+that a threat actor could attack
+and exploit vulnerabilities within our software.
+Now, as I had mentioned prior,
+threat modeling provides documented
+and visual representation of our software application
+and by visually representing data flows,
+that is input and output,
+which involves how our application accepts input,
+processes that input, outputs that information,
+as well as the other entry points
+and exit points of data related to our application.
+So let's deep dive into the steps
+associated with threat modeling.
+Now, the first step in threat modeling
+is to define security objectives.
+What this basically means
+is that we should identify our most valuable assets,
+prioritize the assets and resources
+that we would like to secure
+and set goals as well as security requirements
+before implementing security controls
+for achieving those requirements.
+Once those security objectives have been established,
+we can move on to mapping
+and documenting our application structure
+using visual diagrams that illustrate data flow
+as it relates to how our application
+accepts input data, processes data, and outputs data.
+Once our application has been
+visually represented in diagrams and properly documented,
+the next step is to identify threats,
+vulnerabilities and security gaps
+related to our application.
+Threat research can be done
+by analyzing the organization
+and studying similar organizations
+so that we can understand
+what are the likely threat actors
+to target our organization.
+So understanding the tactics and techniques
+used by these threat actors
+will help in prioritizing any identified vulnerabilities
+found within the threat modeling process.
+Threat modeling also allows us
+to identify any security gaps
+within the structure of our application.
+Now, once these threats, vulnerabilities
+and security gaps have been identified,
+we can move into implementing security controls
+that help mitigate the risk of exploitation
+of the identified vulnerabilities
+and security gaps that were highlighted
+in our previous step.
+And once these security controls have been implemented,
+it's important that we test these controls
+to ensure that they effectively
+mitigate the risk of exploitation
+and prove to be valid security controls.
+So for example, here's a diagram
+that illustrates how http data
+could be maliciously crafted,
+accepted by our web application,
+and then passed onto our applications database
+in the form of a SQL injection attack.
+Speaking of threat modeling,
+here are some examples of threat models
+used by security professionals.
+With Microsoft STRIDE being one that focuses on
+security threats related to spoofing,
+tampering, repudiation, information disclosure,
+denial of service, and elevation of privileges.
+DREAD is also a threat model for Microsoft,
+but in recent years has been deprecated
+in favor of other threat models like PASTA,
+that focuses on the process of attack simulations
+and threat analysis.
+The open web application security project organization
+provides some great guidance
+as it relates to threat modeling
+and I've left the link to their threat modeling process
+in the resources section of this lesson.
+Last, we have the Mitre ATT&amp;CK framework,
+which isn't truly a threat model,
+but it's a great resource for threat modeling
+since it highlights the adversarial tactics
+techniques and common knowledge information
+centered around cybersecurity attacks.
+So taking a look at our security ninja team,
+they must consider the following
+during the planning stage of the DevSecOps lifecycle
+as it relates to the cloud.
+With the first consideration being threat actors,
+especially advanced persistent threat actors,
+that are actively attacking cloud infrastructure
+of organizations that are similar to our own.
+So studying the tactics and techniques of threat actors
+that are targeting financial technology companies
+may differ from those that are attacking
+oil and energy companies.
+Another consideration that our team of ninjas
+need to think about is governance
+and whether or not our regulatory
+and compliance requirements
+may need us to consider special cloud infrastructure.
+Cloud service providers like AWS
+offer infrastructure like AWS GovCloud.
+GovCloud is designed to meet
+compliance and security requirements
+for governmental agencies
+seeking to use cloud infrastructure.
+Shared responsibility should also be
+a big consideration for our team of security ninjas
+as it relates to how we plan to utilize
+cloud infrastructure for our software development.
+And we'll get into the details
+about shared responsibility later on in this course.
+But for now, just understand that shared responsibility
+splits up the responsibility of security
+between our organization
+as a cloud consumer and the cloud service provider.
+Sensitive data handling, security
+and length of data retention
+are all important considerations
+that our security ninjas
+need to think about in the planning stage.
+Having a clear picture of these data security requirements
+from the start of software development
+makes it that much easier
+for them to architect security solutions
+during the release and deployment
+of our software application.
+Last, our security ninjas must consider
+the impact that security incidents, big or small,
+will have on our organization
+if our cloud resources are compromised.
+Because once again, thinking about
+these considerations in the planning stage
+will help the team of ninjas
+architect cloud security controls
+to mitigate the risk of such events occurring.
+Now, with those considerations out of the way,
+let's wrap up today's lesson.
+First, we discussed the planning stage
+of the DevSecOps lifecycle
+and how we discuss strategies for security analysis,
+to which we discuss threat modeling
+as the chief practice for security analysis
+in the stage of the DevSecOps lifecycle
+and the steps and threat modeling
+that we discussed included defining security objectives
+by placing goals for our security controls,
+mapping and diagramming our application structure
+so that we can visualize
+and understand the different data flows
+involved with our software application.
+Next, it's important to identify threat actors
+that may target our application and organization,
+as well as identifying vulnerabilities and security gaps
+when looking at the diagram of our app structure.
+Last, we want to implement mitigation controls
+and verify that these controls
+effectively meet the security objectives
+that we defined in our first step.
+After discussing the steps involved with threat modeling
+we took a look at some examples of threat models,
+including STRIDE and PASTA,
+and then we wrapped up our lesson
+by discussing cloud threats
+and the considerations that our team of
+security ninjas must consider
+as it relates to threat actors
+targeting our applications,
+the shared responsibility between our organization
+and the cloud service provider,
+identifying sensitive data,
+understanding who the data owners will be
+and data length requirements
+and how having such considerations early on
+will help us architect better security controls
+later on in software development.
+And the last consideration we discussed
+is the impact of security incidents on our organization.
+Impact may be quantitative, that is money lost
+as the result of a security incident,
+or qualitative, as in damage to our
+organization's reputation and brand.
+Now, as you can see,
+there's a lot to consider when planning secure software.
+So let's take a look at some of the considerations
+that our team of security ninjas
+must think about when coding secure software
+in the next lesson.

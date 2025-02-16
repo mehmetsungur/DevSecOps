@@ -1,0 +1,199 @@
+Welcome to today's lesson
+on testing secure software.
+And in this lesson,
+we'll take a look, at the testing stage
+of the DevSecOps lifecycle,
+dynamic application security testing, or DAST for short,
+then we'll take a look at OWASP,
+the organization dedicated to web application security
+and their Zed Attack Proxy tool.
+And to finish off our lesson,
+we'll also take a look at GCP's Web Security Scanner,
+which our team of security ninjas
+can use to scan our GCP web applications.
+So coming right after the build stage is the test stage
+where we perform dynamic application security testing
+before proceeding to software release.
+And before we discuss
+what exactly dynamic application security testing is,
+let's take a look at some of the other tests
+that are important to application security.
+In our prior lesson, Building Secure Software,
+we talked about how unit testing
+is a part of the build stage.
+However, we never defined unit testing,
+so I wanna do that right now.
+Unit testing involves testing a particular component
+or functionality
+within our overall software application.
+So as we build our Cloud application,
+multiple components will be involved,
+and it's important that we independently test
+each of these components
+to verify that it's functioning correctly,
+and more importantly,
+that it is free from any security vulnerabilities.
+Now, coming back to the testing stage,
+fuzz testing, also known as fuzzing,
+involves giving our application random input data
+in order to see how that application handles this input.
+This can include more basic fuzzing,
+which consists of randomized input,
+or intelligent fuzzing,
+which involves specifically crafted input
+designed to crash an application,
+thus affecting that application's availability
+or corrupting the application's integrity
+or confidentiality.
+Fuzz testing is a great security measure
+since it involves testing how the application
+unintentionally handles data
+and whether that results in a compromise
+to the application's security.
+Now, getting back to dynamic application security testing,
+also known as DAST,
+this form of testing is a black-box approach
+that doesn't require access
+to the software application's source code,
+so the complete opposite of the white-box approach
+involved with static application security testing.
+Dynamic application security testing
+is also performed while the application is up and running,
+which is why it's performed in the testing phase
+after we have a functional build
+of our application software.
+When compared to SAST,
+dynamic application security testing
+occurs later on in the software development process,
+which is completely okay
+because it's important to test the security
+of a running application
+even after we've checked the source code
+for security vulnerabilities.
+And the reason for this is because
+some security vulnerabilities don't become present
+until the application is built and actively running.
+So with DAST defined,
+I wanted to talk about web application security,
+and when it comes to web application security,
+the organization Open Web Application Security Project,
+or OWASP for short,
+is dedicated to studying, researching,
+and publishing projects
+centered around the security of web applications.
+And one of their most notable projects
+is the OWASP Top 10 list.
+This list details
+the most notorious web application security risks
+such as cross-site scripting, SQL injection,
+broken access control,
+and many others that you can find in the resources section
+of this lesson.
+This list is so important to web application security
+that I have dedicated a whole course
+detailing each entry on this list,
+and you can also find a link to that course
+in the resources section as well.
+Now, the organization OWASP also has a project
+called the Zed Attack Proxy,
+and this is a open source DAST tool
+used for testing web applications
+for security vulnerabilities,
+especially those listed on the OWASP Top 10.
+So with that said, let's take a look at the Zed Attack Proxy
+running on a Azure VM.
+So here we have the ZAP dashboard
+where I'll be running an automated scan
+against the web application.
+So I've already entered in the IP address
+and port number of the application,
+and then I'll go ahead and click Attack.
+And what ZAP will begin to do is crawl the web app
+and find all of the URLs
+associated with the web application.
+Once that's complete,
+you can take a look at some of the alerts
+that ZAP has identified with our web app.
+Now, it's important to note
+that this scan was run using the Standard Mode,
+but you also have the option of running
+a more aggressive scan using Attack Mode
+or more passive scans using Safe and Protected Mode.
+ZAP, by default, includes a number of extensions
+such as a DOM based cross-site scripting,
+active scanner rule,
+and includes a number of extensions
+available on their marketplace.
+So as you can see,
+there is an advanced SQL injection scanner
+that we can install by clicking the checkbox
+and selecting Install Selected.
+ZAP also has the ability to modify HTTP requests
+by selecting the requester tab
+and modifying the different HTTP method
+that you would like to use.
+So here we have GET and a number of others.
+Now, while Zed Attack Proxy
+is a great open source DAST tool,
+it requires a lot of tinkering and configuration
+to truly be effective,
+which is why Cloud service providers like Google
+have made available Cloud native DAST tools
+such as the Web Security Scanner.
+This GCP service scans your public web applications
+for vulnerabilities such as those found on the OWASP Top 10.
+But the Web Security Scanner also provides recommendations
+on how to remediate
+some of those discovered security vulnerabilities.
+Now, similar to the Standard and Attack Mode found on ZAP,
+the Web Security Scanner can be quite aggressive
+when scanning and attacking your web application
+in order to discover vulnerabilities.
+That's why it's highly recommended
+to scan web applications running in a test environment
+and to be sure that you back up app data
+prior to utilizing this service
+since it can result in data loss.
+So when performing dynamic application security testing
+on Cloud applications,
+I recommend using the Cloud native DAST tools
+since they require much less configuration
+than some of the open source tools like ZAP,
+and these Cloud native DAST tools
+are better suited for running against Cloud-based web apps.
+So let's wrap up this lesson on testing secure software.
+In the beginning of this lesson,
+we talked about the testing stage,
+and in this stage, it's important to perform
+dynamic application security testing.
+We also took a look at
+testing various parts of our software application
+using unit testing
+and analyzing how our web application behaves
+by inputting random or intelligently crafted data
+using fuzz testing.
+Dynamic application security testing, or DAST for short,
+is a black-box security testing approach
+that doesn't require access to the application source code
+and is performed while the application is actively running.
+In the later half of this lesson, we discovered OWASP,
+which is an organization
+dedicated to web application security
+that also publishes the OWASP Top 10 list
+of the most notorious web application security risks.
+This organization also maintains a project
+known as the Zed Attack Proxy,
+which is a open source DAST tool.
+We discussed how ZAP offers a number of options
+such as marketplace extensions
+and the ability to craft HTTP requests.
+Last, we took a look at the GCP Web Security Scanner,
+which is a Cloud native web app DAST tool.
+Not only does the web security scanner
+identify security vulnerabilities
+like those listed on the OWASP Top 10,
+but it also provides remediation steps
+for many of the vulnerabilities that it discovers.
+Well, that does it for this lesson
+on testing secure software.
+Stay tuned for the section summary.

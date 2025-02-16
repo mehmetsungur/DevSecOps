@@ -1,0 +1,28 @@
+Hello, and welcome to the course,
+Introduction to DevSecOps for Cloud.
+I'm Chris Jackson,
+and I'll be your security training architect
+for this course.
+A little bit about me,
+I'm a certified information system security professional
+with over a decade of experience in the IT field.
+I'm also an avid gamer, basketball fan and drone enthusiast.
+Now I've structured this course
+around the DevSecOps lifecycle.
+Next, we'll learn about the planning, coding, building
+and testing stages of the DevSecOps lifecycle.
+And last, we'll learn about the releasing, deploying,
+monitoring and responding stages of the DevSecOps Lifecycle.
+I've gone ahead and included some practical demos
+that will aid you with the hands-on labs
+that accompany this course.
+So by the end of this course,
+you'll be able to apply the DevSecOps methodology
+for your software development and apps running in the cloud.
+Now, before we begin our journey,
+let's go over some prerequisites.
+It's important that you have a fundamental understanding
+around cloud computing concepts and a basic understanding
+around cybersecurity and software development.
+So with that out the way, let's start our journey
+by learning about DevSecOps for the cloud.

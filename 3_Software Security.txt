@@ -1,0 +1,317 @@
+Welcome to our first lesson titled,
+"Software Security".
+Where we'll be looking at security and software development.
+Define AppSec, short for application security.
+Compare DevOps against DevSecOps,
+and see how those two methodologies differ
+and wrap up with discussing software security in the cloud.
+So before we deep dive into security
+of software development, let's first take a look
+at the software development lifecycle
+that software development teams follow when
+completing a software development project.
+As we can see, the lifecycle starts
+off with planning and gathering requirements.
+Once those requirements and software needs are defined
+development teams go on to design
+and eventually code the software.
+Once software coding is complete
+testing is performed typically by quality assurance teams
+in order to identify bugs and performance issues prior
+to the final deployment of that software.
+Now, this lifecycle is a great stage
+by stage framework for software development.
+However, it does not intentionally include security
+as part of each of these stages.
+And for this reason
+the National Institute of Standards and Technology,
+or NIST for short.
+Created the secure Software development framework.
+And a side note here, the National Institute of Standards
+at Technology is a US government organization
+that publishes several special publications related
+to computer and information security.
+Not only do these documents dictate the security standards
+for many US government agencies and organizations
+but they are also highly respected by the cybersecurity
+and information security industries as a whole.
+Now, the NIST Secure Software Development
+Framework secures the software development
+lifecycle using the four following security recommendations
+the first being to prepare the organization to
+perform secure software development.
+This includes training and educating our human workforce
+about security best practices, integrating security
+into our organizational processes and procedures
+hardening the technologies used by our organization
+through the use of security controls,
+both physical and logical in placing
+clearly defined security benchmarks
+and guidelines as part of our software development process.
+The next point in the SSDF concerns protecting the software
+and this includes protecting the software
+from unauthorized access
+by implementing strict authentication processes
+such as multifactor authentication,
+and ensuring that our access controls follow the principle
+of leash privilege by only granting the minimal level
+of access needed for a user to perform their role.
+Not only are both these approaches great security practices
+but they also prevent unauthorized tampering
+that may compromise the integrity
+of our software and defend against the introduction
+of malicious code into the software being written.
+The SSDF also recommends the production
+of well-structured software.
+This means that we are testing our software
+for the presence of security vulnerabilities
+and remediating these security issues prior
+to the release of our software.
+And finally, although we may do our best to
+identify security vulnerabilities within our software
+there may be some security vulnerabilities that
+go overlooked even after our software has been released.
+And that's why the SSDF recommends
+that we respond to these vulnerabilities swiftly
+and releasing security patches whenever
+these security vulnerabilities are discovered.
+Now, the secure software development framework
+isn't the only software development framework
+that seeks to secure the software development lifecycle.
+So I've left a link in the resources section
+to Microsoft's security development lifecycle so
+that you can take a look at their framework
+which happens to be just a little bit more vendor specific.
+With that out the way
+let's move on to application security or AppSec for short.
+And AppSec involves securing software applications
+which we can break down into three fundamental concepts.
+The first of which being following security
+best practices when developing software.
+This includes practices
+like sanitizing input when developing the front end
+of web applications so that data input by users such
+as malicious SQL queries do not literally get interpreted
+by our web application and called SQL injection attacks.
+And another best practice,
+especially for applications being developed
+on cloud platforms,
+is to leverage the cloud service providers
+secrets management services so that secrets
+aren't hard coded into our software applications.
+This makes it much more harder for hackers to
+exploit our application if they happen to gain access
+to our source code.
+Another important aspect of AppSec
+is identifying vulnerabilities.
+Since vulnerabilities are weaknesses
+within our software application,
+it's important that we identify them prior to release
+so that hackers and malicious actors
+do not exploit those security vulnerabilities.
+And finally, it's important
+that we implement the proper security controls.
+So for cloud software development, security teams
+wanna leverage the cloud native security services such
+as identity and access management services to control access
+to different parts of the application security groups
+firewalls and specifically web application firewalls are
+also security controls that help secure traffic flow
+to running web applications
+and their underlying infrastructure.
+And now that we've defined AppSec,
+let's talk about three different types of security teams.
+The first team that we have is the blue team,
+which is the defensive team responsible
+for preventing and responding to security events.
+Blue teams implement security controls that prevent attacks
+monitor for malicious activity within our environment
+and respond to such activity during security events.
+So all of this is defensive activity
+so naturally there must be a yang and a yang
+which is where our red team
+or offensive security team comes into play.
+So the red team is responsible
+for performing penetration testing.
+This form of security testing seeks to
+discover security vulnerabilities and actively exploit them.
+These discovered vulnerabilities are then recorded
+in documentation and passed along
+to the organization's security team
+for review and remediation.
+Now, when the red team is performing penetration testing
+the blue team is unaware that this testing is taking place.
+And this is because the organization wants to
+see how the blue team will react
+to this form of offensive penetration testing.
+However, the purple team approach involves
+limiting the scope of red team activities
+and having the red team perform real world tactics
+and techniques that are being used by real world
+threat actors that seek to target the organization.
+Not only that,
+but blue team members are given advanced notice
+to when red team activities
+and penetration testing will take place.
+This allows for a much more defined scope
+that mimics real world attacks.
+No longer does the blue team have to defend
+against an unknown attack surface,
+but instead they can focus their resources
+and properly defend the applications
+and infrastructure defined by the penetration testing.
+And by limiting the scope
+we are able to better gauge the effectiveness
+of the blue team's responsiveness and security controls.
+Not only that,
+but discovered security vulnerabilities can be prioritized
+and remediated much faster
+since the limited scope also results in a smaller number
+of security vulnerabilities being discovered.
+So this approach is much more efficient
+in testing the blue team's effectiveness and doesn't have
+the red team discovering endless security vulnerabilities
+which realistically will not be leveraged
+by real world threat actors.
+Now let's switch gears and compare DevOps to DevSecOps.
+Now, DevOps, as the name implies
+involves development and IT operations teams
+but this methodology seeks to integrate both development
+and IT operations teams in an effort to drive automation
+of software development processes.
+So through collaboration of both these teams
+we are able to facilitate more effective
+targeted and meaningful communication between developers
+and IT operations, which in the end helps drive rapid
+and efficient software development.
+Now, as great as the DevOps methodology is
+it is lacking one key area of concern.
+And when you take a look at the word DevSecOps
+you can see that security has been added squarely
+in the middle of that term.
+So this means that security is added
+to the mix between development and IT operations teams.
+And one of the key concepts
+of the DevSecOps methodology is the term shifting left.
+This term refers to the integration
+of security testing and security practices early
+on within the software development life cycle.
+So by shifting left, we can identify software
+security vulnerabilities much earlier on
+and save ourselves the headache
+of patching them much later in the life cycle.
+Since doing so can oftentimes be expensive
+and time consuming.
+So the security conscious collaboration puts security teams
+in the middle of development
+and IT operations communications so that security is always
+in mind when making operations or development decisions.
+And so that security remains integrated
+in the software development lifecycle.
+So when we properly implement security automation
+and security practices
+throughout the software development lifecycle
+our organization can drive efficient
+and secure software development.
+Now, consider this scenario.
+Our team of security ninjas are being tasked
+with implementing the DevSecOps methodology
+to our existing software development lifecycle ran
+in large part by the organization's development
+and IT operations teams.
+Not only that, our group of security ninjas must also keep
+in mind how to implement the DevSecOps methodology
+to the software development processes taking place
+in our cloud environments.
+This means that our ninjas must consider the
+shared responsibility model,
+which states that the cloud service provider
+shares the responsibility of securing cloud resources,
+infrastructure, and applications alongside our organization.
+So our security ninjas must keep
+in mind how to properly implement security controls
+of our cloud infrastructure and leverage the tools provided
+by the cloud service provider to get that job done.
+Not only that,
+but our security ninjas must consider identity
+and access management,
+especially as it relates to access controls
+for limiting access to our sensitive
+and vital cloud resources considerations such as
+the principle of lease privilege
+help ensure that our access controls
+are effectively limiting access
+by only granting the minimal level
+of access to each team member within our organization.
+In this way, we limit team members
+from abusing their privileges
+and performing actions outside of their role.
+Our security ninjas also have to consider how
+to properly leverage encryption of our data stored
+in the cloud and the management of our cryptographic keys
+and secrets used by our cloud resources.
+In another important consideration
+that our security ninjas need to be aware
+of is defense in depth and at scale.
+This approach to defense involves implementing
+multiple security controls so that one security control
+isn't a single point of failure.
+If a malicious threat actor compromises one
+security control,
+that actor should be met with another security
+control that further impedes their progress.
+So it's important
+that multiple security controls are present
+and that these security controls scale
+and grow as our cloud infrastructure grows.
+Now, as you can see,
+our security ninjas have a lot to think
+about when implementing the methodology
+of DevSecOps in the cloud.
+So let's wrap up this lesson and take a look
+at how they can tackle this implementation as well
+as the multiple security considerations
+throughout the remainder of this course.
+So let's summarize everything that we just learned.
+We talked about security
+and software development where we first looked
+at the six stages in the software development lifecycle
+and took a deep dive into the secure software
+development framework created by NIST.
+This framework involved preparing the organization
+protecting the software application
+producing well-structured software,
+as well as responding to security vulnerabilities.
+Next, we defined application security
+and how we can provide security
+to our applications by using security best practices
+discovering and remediating vulnerabilities
+through the process of vulnerability management
+and implementing security controls to prevent attacks
+and protect our software applications.
+In the second half of this lesson,
+we compare DevOps to DevSecOps
+where DevSecOps integrates security
+alongside development and IT operations teams.
+This methodology also ceases to shift left
+which involves integrating security best practices
+and automation early on
+in the software development lifecycle.
+And finally, we discuss software security
+in the cloud where our group
+of security ninjas must consider shared responsibility
+as it relates to the security of our cloud resources
+and what portions of cloud security we are responsible for
+versus what the cloud service provider is responsible for.
+We also discussed how the security ninjas must
+consider the implementation
+of security controls in the cloud.
+These security controls can include encryption as well
+as access controls, but it's important
+that our ninjas have multiple security controls
+so that there isn't a single point
+of failure so that the security controls scale
+as our cloud infrastructure grows.
+Well, that does it for this lesson.
+Stay tuned as we discuss how our security ninjas
+will implement the DevSecOps methodology in the cloud.

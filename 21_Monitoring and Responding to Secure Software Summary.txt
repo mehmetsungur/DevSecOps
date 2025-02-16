@@ -1,0 +1,70 @@
+Welcome to the section summary
+for Monitoring and Responding to Secure Software.
+In the summary, we'll go over the lesson
+Monitoring Secure Software and the lesson
+Responding to Secure Software.
+In our lesson, Monitoring Secure Software,
+we took a look at the monitoring stage, which involves
+primarily monitoring suspicious and malicious activity.
+Next, we took a look at logging,
+which involves recording events, which user performed,
+which privilege action, from where, such as an IP address,
+and when we talked about scene platforms,
+and how they provide centralized management
+for security information and security events using a SIEM.
+Our team of security ninjas can query and search
+to vast amounts of security information
+collected from various log sources.
+And we also discussed how SIEM are great
+for surfacing security event data, such as failed logins,
+alerting on certain security events,
+and provide us the ability to build visual dashboards.
+In the last part of this lesson,
+we compared web application firewalls
+to runtime application self-protection.
+WAFs protect our web applications
+from web app attacks like SQL injection,
+and these firewalls sit external to our web application,
+and provide protection by filtering traffic
+to our web application.
+On the other hand, RASP is embedded in the web application.
+This allows for RASP to be application context aware
+by understanding the app's runtime environment,
+internal behavior, and data flows.
+In the lesson, Responding to Secure Software,
+we took a look at the responding stage
+of the DevSecOps lifecycle, where we respond
+to cybersecurity attacks and issues identified
+in the monitoring phase.
+Next, we took a look at the NIST incident response lifecycle
+detailed in special publication 800-61,
+which involves preparation for cybersecurity incidents
+using security controls, detection, and analysis
+of security events to determine whether or not
+a security event is an actual security incident.
+And if an event is determined to be an incident,
+we move into the containment, eradication,
+and recovery phase for remediating the security incident.
+Finally, in the post-incident phase,
+we review the documentation gathered in the previous phases,
+formulate lessons learned from the incident,
+and contact external parties, where appropriate.
+Next, we took a look at cloud API security, API management,
+and how cloud API gateways can provide proper authentication
+and authorization of our API resources,
+encryption of our API communication,
+and protect our API availability
+through the usage of rate limiting and throttling.
+In the last part of this lesson,
+we discussed protecting web application availability,
+using app load balancing to distribute
+and manage traffic flow to our web apps.
+App load balancers protect the availability of our web app,
+typically from legitimate users.
+DDoS attacks involve malicious threat actors
+leveraging amplification networks like Botnets
+to specifically target our web application,
+and crash that web application,
+so that it is no longer available to other users.
+While that wraps up our section,
+stay tuned for the conclusion section.

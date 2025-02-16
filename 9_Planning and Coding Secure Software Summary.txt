@@ -1,0 +1,77 @@
+Welcome to the section summary
+for "Planning and Coding Secure Software".
+And in this summary,
+we'll be going over the following lessons,
+"Planning Secure Software",
+and "Coding Secure Software".
+In the lesson "Planning Secure Software",
+we discussed the planning stage of the DevSecOps lifecycle
+and how we discuss strategies for security analysis,
+to which we discuss threat modeling
+as the chief practice for security analysis
+in the stage of the DevSecOps lifecycle.
+And the steps and threat modeling that we discussed
+included defining security objectives
+by placing goals for our security controls,
+mapping and diagramming our application structure
+so that we can visualize
+and understand the different data flows
+involved with our software application.
+Next, it's important to identify threat actors
+that may target our application and organization,
+as well as identifying vulnerabilities and security gaps
+when looking at the diagram of our app structure.
+Last, we want to implement mitigation controls
+and verify that these controls effectively meet
+the security objectives that we defined in our first step.
+After discussing the steps involved with threat modeling,
+we took a look at some examples of threat models
+including STRIDE and PASTA.
+And then we wrapped up our lesson
+by discussing cloud threats and the considerations
+that our team of security ninjas must consider
+as it relates to threat actors targeting our applications,
+the shared responsibility between our organization
+and the cloud service provider,
+identifying sensitive data,
+understanding who the data owners will be,
+and data length requirements
+and how having such considerations early on
+will help us architect better security controls
+later on in software development.
+And the last consideration we discussed is the impact
+of security incidents on our organization.
+Impact may be quantitative,
+that is money lost as the result of a security incident,
+or qualitative,
+as in damage to our organization's reputation and brand.
+In the lesson "Coding Secure Software",
+we talked about the coding stage
+and how it involves code analysis, code reviews,
+all for the purpose of integrating security
+while our developers actually write the software code.
+Code analysis is the analysis and review of source code.
+So when our security ninjas are applying
+the DevSecOps methodology to code analysis,
+it's important that we prioritize
+finding security vulnerabilities
+and not just focus on ways
+to improve application performance.
+The first cloud coding tool that we discussed
+was Amazon CodeGuru,
+which uses machine learning to analyze our code
+using the reviewer component
+and surface security vulnerabilities
+through the use of security detectors.
+Last, we took a look at GCP's Cloud Code,
+which is a plug-in extension for IDEs
+that allows native integration
+for developers utilizing Google Cloud platform
+straight from their IDE,
+with integration to security services
+like Identity and Access Management
+and Secret Manager for leveraging programmatic access
+to secrets within our code.
+Well, that wraps up our summary for this section.
+Stay tuned for our next section,
+"Building and Testing Secure Software".

@@ -1,0 +1,11 @@
+Welcome to the final section of this course titled,
+Monitoring and Responding to Secure Software.
+In this final section, we'll have the following lessons,
+monitoring secure software
+and responding to secure software.
+And some of the topics we're gonna be discussing
+in this section include logging for our cloud resources,
+the incident response lifecycle
+for handling security incidents.
+and implementing the DevSecOps lifecycle
+to our applications running in the cloud.

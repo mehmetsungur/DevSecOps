@@ -1,0 +1,10 @@
+Welcome to this new section titled
+"Releasing and Deploying Secure Software".
+In our first lesson, we'll be taking a look
+at releasing secure software
+and then moving on to our next lesson,
+deploying Secure Software.
+This section covers how we can implement DevSecOps
+for securing the continuous delivery
+and deployment of our software applications
+being developed in the cloud.
